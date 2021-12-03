@@ -6,7 +6,6 @@ DHT dht(DHTPIN, DHTTYPE);
 void setup() 
 {
   Serial.begin(9600);
-  //Serial.println("DHTxx test!");
   dht.begin();
 }
 
@@ -24,13 +23,6 @@ void loop()
     Serial.println("Failed to read from DHT sensor!");
     return;
   }
-
-//  Serial.print("Humidity: ");
   Serial.println(h);
-  //Serial.println(" %");
-  //Serial.print("Temperature: ");
   Serial.println(t);
-  //Serial.print(" *C   ");
- // Serial.println(f);
-  //Serial.println(" *F");
 }
